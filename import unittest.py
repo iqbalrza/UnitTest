@@ -21,7 +21,7 @@ class TestDivide(unittest.TestCase):
         """Test the divide function with some inputs"""
         self.assertEqual(divide(10, 2), 5)
         
-        with self.assertRaisesRegex(DivideByZeroError, "Division by zero is not allowed. Mang eak") as context:
+        with self.assertRaisesRegex(DivideByZeroError, "Division by zero is not allowed") as context:
             divide(10, 0)
         print("\n" + str(context.exception) + "\n")
         

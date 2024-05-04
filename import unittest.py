@@ -18,7 +18,7 @@ class DivideByZeroError(Exception):
 class TestDivide(unittest.TestCase):
     """Test case class for the divide function"""
     def test_divide(self):
-        """Test the bagi function with some inputs"""
+        """Test the divide function with some inputs"""
         self.assertEqual(divide(10, 2), 5)
         
         with self.assertRaisesRegex(DivideByZeroError, "Division by zero is not allowed. Mang eak") as context:
